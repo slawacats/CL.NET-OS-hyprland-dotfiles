@@ -1,0 +1,13 @@
+location=center
+
+width=600
+height=400
+
+
+prompt=Введите название программы
+
+no_actions=true
+
+insensitive=true
+
+allow_images=true
