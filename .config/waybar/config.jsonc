@@ -85,7 +85,7 @@
     },
 
     "custom/language": {
-        "exec": "hyprctl devices -j | jq -r '.keyboards[]|select(.name|contains(\"g105\"))|.active_keymap//\"us\"'|head -n1 | sed 's/English/US/;s/Russian/RU/;s/.*(US)/US/;s/.*(RU)/RU/'",
+        "exec": "hyprctl devices -j | jq -r '(.keyboards[] | select(.active_layout_index == 1)).active_keymap//\"US\"'|head -n1 | sed 's/English/US/;s/Russian/RU/;s/.*(US)/US/;s/.*(RU)/RU/'",
         "interval": 1,
         "format": "{}",
         "on-click": "hyprctl switchxkblayout next"
