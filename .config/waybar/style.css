@@ -108,7 +108,8 @@
 #custom-gpu-temp,
 #custom-memory,
 #disk,
-#custom-brightness {
+#custom-brightness,
+#custom-powersupply {
     border: 2px solid transparent;
     /*transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);*/
     /* background-color: rgb(66, 66, 66); */
@@ -253,7 +254,6 @@
     /* background: rgba(137, 180, 250, 0.15); */
     border: 2px solid transparent;
     /*transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);*/
-    margin-bottom: 4px;
 }
 
 #network:hover {
@@ -271,6 +271,7 @@
     /* background: rgba(166, 227, 161, 0.15); */
     border: 2px solid transparent;
     /*transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);*/
+    margin-bottom: 4px;
 }
 
 #battery:hover {

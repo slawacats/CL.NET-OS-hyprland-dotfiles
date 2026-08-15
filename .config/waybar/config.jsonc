@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "position": "left",
-    "width": 10,
+    "width": 70,
     "margin-left": 5,
     //"margin-right": 5,
     "margin-bottom": 5,
@@ -19,7 +19,7 @@
     "modules-center": [
         "custom/language",
         "clock",
-		"custom/date"
+		    "custom/date"
     ],
     
     "modules-right": [
@@ -29,7 +29,8 @@
         "custom/gpu-temp",
         "custom/memory",
         "pulseaudio",
-        "network"
+        "network",
+        "battery"
     ],
 
     // ═══════════════════════════════════════════════════════════
@@ -48,10 +49,10 @@
         "on-click": "activate",
         "format": "{name}{windows}",
         "format-icons": {
-	    "urgent": "",
+	          "urgent": "",
             "default": ""
         },
-		"workspace-taskbar": {"enable": true}
+		    "workspace-taskbar": {"enable": true}
     },
 
     // ═══════════════════════════════════════════════════════════
@@ -208,7 +209,14 @@
         "interval": 3,
         "signal": 10,
         "on-click": "kitty -e htop"
-    }
+    },
+
+    "custom/powersupply": {
+        "exec": "~/.config/waybar/scripts/powersupply.sh",
+        "return-type": "json",
+        "inverval": 3,
+        "format": "{}"
+    },
 
     /* "custom/brightness": {
         "exec": "~/.config/waybar/scripts/brightness.sh",
