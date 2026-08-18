@@ -1,0 +1,1 @@
+/home/nd1/.config/hypr/hyprland.conf
